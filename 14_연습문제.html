@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black; /*2px 크기의 검은색 선(solid) */
+            border-collapse: collapse; /* 겹치는 선을 하나로 */
+            padding: 5px 20px; /* 상하 5px whkdn 20px */
+            text-align: center; /* 가운데 정렬 */
+        }
+    </style>
+    <style>
+        th{
+           background-color: lightskyblue;
+        }
+    </style>
+    </head>
+    <style>
+     #container{
+            width: 800px;
+            margin: 5px auto;
+        }
+        #contents{
+            width: 400px;
+            margin: 10px auto;
+            border: 2px solid black ;
+        }
+        .title{
+            color: white;
+            background-color:green;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+          .accent{
+            color: red;
+            font-weight: bold;
+        }
+        
+    </style>
+
+<body>
+     <div id="container">
+        <div class="title">자바 수강생 모집</div>
+        <div class="title">자바에 관심 있는 새내기 여러분을 모집합니다.</div>
+    </div>
+    <h3>교내 프로그래밍 동아리에서 신입생을 대상으로 자바 수강생을 모집합니다.</h3>
+    <h3 class="accent">학부나 전공에 상관없습니다.</h3>
+    <h3>평소 방송에 관심있었던 여러 학우들의 지원바랍니다.</h3>
+
+    <table>
+        <tr>
+            <th background>모집 기간</th>
+            <td>2월 5일 ~ 2월 11일</td>
+        </tr>
+         <tr>
+            <th>모집 분야</th>
+            <td>자바 기초, 자바 심화, 백엔드 입문</td>
+        </tr>
+         <tr>
+            <th rowspan="2">지원 방법</th>
+            <td rowspan="2">양식 작성 후 이메일 접수 <span>지원서 양식은 교내 동아리 홈페이지 공지 게시판에 있습니다.</span></td>
+        </tr>
+    </table>
+     <h2 class="center">혜택</h2>
+     <ul>
+         <li>아주 작은 소정의 활동비 지급</li>
+         <li>주기적인 회식</li>
+      </ul>
+      <a href="../day2/13_style.html"></a>
+      <img src="../java_img.jpg"width="300" height="300">
+</body>
+</html>
