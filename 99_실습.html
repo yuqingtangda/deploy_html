@@ -31,11 +31,12 @@
             border-bottom-right-radius: 20px;
             background-color: white;
             float: left;
+           
         }
         .title {
             border-left: 2px;
-            border-color: chartreuse;
-             margin-left: 20px;
+            margin-left: 20px;
+    
         }
         .subtitle{
             text-align: center;
@@ -52,6 +53,9 @@
         }
         .box1:hover{
              background-image: url("111.png");
+        }
+        #sns a:hover {
+            background: #eee;
         }
          .list1{
             list-style-type:unset;
@@ -101,9 +105,9 @@
     </div>
         </div>
         <div id="sidebar">
-          <div class="title"><b>자기소개</b></div>
+          <div class="title"><b style="border-left: 5px solid rgb(86, 86, 233);">자기소개</b></div>
           <p><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</p>
-          <div class="title"><b>Experience</b></div>
+          <div class="title"><b style="border-left: 5px solid rgb(86, 86, 233);">Experience</b></div>
             <ul class="list1">
               <li>자바</li>
             </ul>
@@ -120,14 +124,14 @@
               <li>오라클</li>
               <li>html</li>
             </ul>
-         <div class="title"><b>보유 기술</b>
+         <div class="title"><b style="border-left: 5px solid rgb(86, 86, 233);">보유 기술</b>
             <ul class="list1">
               <li>자바</li>
               <li>오라클</li>
               <li>html</li>
             </ul>
         </div>
-        <div class="title"><b>Education</b>
+        <div class="title"><b style="border-left: 5px solid rgb(86, 86, 233);">Education</b>
             <table>
                 <caption>학력 사항</caption>
                   <thead>
@@ -162,6 +166,7 @@
     setInterval(()=>{
         let datetime = new Date();
         let obj = document.querySelector("#time");
+        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
         let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
         let time = datetime.getHours() + " : "
                    + datetime.getMinutes() + " : "
